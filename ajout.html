@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="controls.js"></script>
+</head>
+<body>
+    <form onsubmit="return verif1()" action="ajout.php" method="post">
+        <fieldset>
+            <legend>Ajout d'une réclamation</legend>
+            
+            <label>Tél client : </label>
+            <input type="text" id="tel" name="tel" />
+            <br />
+            
+            <label>Catégorie : </label>
+            <select id="cat" name="cat">
+                <option>Choisir une catégorie</option>
+                <option value="1">Authentification</option>
+                <option value="2">Branchement</option>
+                <option value="3">Synchronisation</option>
+                <option value="4">Autres</option>
+            </select>
+            <br />
+            
+            <label>Description : </label>
+            <br />
+            <textarea cols="50" rows="5" name="desc" id="desc"></textarea>
+            <br />
+            
+            <input type="submit" value="Ajouter" id="bt1" class="bt" />
+            <input type="reset" value="Annuler" class="bt" />
+        </fieldset>
+    </form>
+</body>
+</html>
